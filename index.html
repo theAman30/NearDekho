@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Near Dekho is your local community compass. Discover nearby businesses, events, and exclusive offers within a customizable radius. Empowering local communities by connecting residents with shops, services, and activities. Start exploring your neighborhood today!"
+    />
+
+    <meta
+      name="keywords"
+      content="
+    local community platform, hyperlocal discovery, nearby businesses, local events, community engagement, small business promotions, neighborhood news, local offers, explore local, discover neighborhood, local business directory, community compass, connect locally, local economy support, neighborhood culture, tier 1 cities, tier 2 cities, local MSMEs, local business marketing, local services, real-time location updates, local shopping deals, find local businesses, local discovery app, support small businesses, neighborhood events near me, local traditions, Near Dekho platform, explore your community, revitalizing local communities"
+    />
+
+    <title>
+      Near Dekho - Revolutionizing Local Discovery and Community Engagement
+    </title>
+
+    <!-- External CSS file linking  -->
+    <link rel="stylesheet" href="/css/output.css" />
+
+    <!-- favicon icon linking  -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+
+    <!-- Navbar starts from here  -->
+    <nav
+      class="p-2 shadow md:flex md:items-center md:justify-between w-[94%] fixed bg-white z-30 rounded left-1/2 transform -translate-x-1/2 m-0 mt-4"
+    >
+      <div class="logo flex justify-between items-center">
+        <span class="text-2xl cursor-pointer">
+          <img class="h-9 inline" src="/images/favicon-icon.png" />
+          <span class="text-[1.7rem] text-[#444]">Near</span
+          ><span class="text-[1.9rem] text-[#d5991d]">Dekho</span>
+        </span>
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon
+            name="menu"
+            class="text-[#d5991d]"
+            onclick="Menu(this)"
+          ></ion-icon>
+        </span>
+      </div>
+
+      <ul
+        class="md:flex md:items-center md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 bg-white"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            data-scroll="home"
+            href="#home"
+            class="active text-xl text-[#444] hover:text-[#d5991d] duration-500"
+            >Home</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            data-scroll="features"
+            href="#features"
+            class="text-xl hover:text-[#d5991d] duration-500 text-[#444]"
+            >Features</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            data-scroll="location"
+            href="#location"
+            class="text-xl hover:text-[#d5991d] duration-500 text-[#444]"
+            >Our Location</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            data-scroll="about"
+            href="#about"
+            class="text-xl hover:text-[#d5991d] duration-500 text-[#444]"
+            >About Us</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a
+            data-scroll="contact"
+            href="#contact"
+            class="text-xl hover:text-[#d5991d] duration-500 text-[#444]"
+            >Contact Us</a
+          >
+        </li>
+
+        <button
+          class="bg-[#d5991d] text-white duration-500 px-6 py-2 mx-4 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] rounded"
+        >
+          Get started
+        </button>
+      </ul>
+    </nav>
+    <!-- Navbar ends here  -->
+
+    <!-- Home/hero Section starts from here  -->
+    <section
+      class="home min-h-[100vh] flex justify-center items-center relative"
+      id="home"
+    >
+      <div class="video absolute top-0 left-0 w-[100vw] h-[100vh]">
+        <video
+          class="absolute top-0 left-0 h-[100%] w-[100%] object-cover z-[-1]"
+          src="/images/107-135735969_medium.mp4"
+          loop
+          muted
+          autoplay
+        ></video>
+      </div>
+
+      <div class="content text-center z-[1]">
+        <h1 class="text-5xl text-[white]">
+          Discover Your Neighborhood Like Never Before
+        </h1>
+        <p class="font-light text-xl mt-5 text-[white]">
+          Explore local businesses, events, and exclusive offers all within your
+          reach
+        </p>
+        <a
+          href="#features"
+          class="px-5 py-2 inline-block bg-[#d5991d] rounded transition-colors mt-10 z-5 text-white duration-500 mx-4 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d]"
+          >Explore Now</a
+        >
+      </div>
+    </section>
+    <!-- Home/hero Section ends here  -->
+
+    <!-- features section starts from here  -->
+    <section class="features flex flex-col items-center mt-[2.5rem] mb-[3rem]" id="features">
+        <h1 class="text-[2.7rem] font-semibold text-center mb-[4rem] text-[#444]">Features</h1>
+    
+        <div class="cards flex flex-col justify-center items-center space-y-8 md:flex-row md:space-y-0 md:space-x-18">
+            <div class="card1 flex items-center justify-center m-58">
+                <div class="bg-[#d5991d] w-80 h-auto flex flex-col items-center p-8 rounded-lg shadow-lg group">
+                    <div class="bg-cover aspect-square w-full -mt-24 bg-center rounded-lg shadow-sm grayscale group-hover:grayscale-0 transition-all duration-500 z-20" style="background-image: url('images/features_image1.jpg');"></div>
+                    <div id="content-wrapper" class="flex flex-col opacity-0 group-hover:opacity-100 invisible group-hover:visible h-0 group-hover:h-full delay-200 z-10">
+                        <div id="content" class="flex flex-col items-center -mt-28 group-hover:mt-2 transition-all duration-300 delay-600">
+                            <h2 class="font-bold text-[1.4rem] tracking-wide text-white">Local Business Listings</h2>
+                            <p class="text-center font-light text-white">Discover hidden gems in your area, from coffee shops to artisan stores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card2 flex items-center justify-center m-5">
+                <div class="bg-[#d5991d] w-80 h-auto flex flex-col items-center p-8 rounded-lg shadow-lg group">
+                    <div class="bg-cover aspect-square w-full -mt-24 bg-center rounded-lg shadow-sm grayscale group-hover:grayscale-0 transition-all duration-500 z-20" style="background-image: url('images/features_image1.jpg');"></div>
+                    <div id="content-wrapper" class="flex flex-col opacity-0 group-hover:opacity-100 invisible group-hover:visible h-0 group-hover:h-full delay-200 z-10">
+                        <div id="content" class="flex flex-col items-center -mt-28 group-hover:mt-2 transition-all duration-300 delay-600">
+                            <h2 class="font-bold text-[1.4rem] tracking-wide text-white">Community Events</h2>
+                            <p class="text-center font-light text-white">Never miss out on local festivals, workshops, and meetups.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="card3 flex items-center justify-center m-5">
+                <div class="bg-[#d5991d] w-80 h-auto flex flex-col items-center p-8 rounded-lg shadow-lg group">
+                    <div class="bg-cover aspect-square w-full -mt-24 bg-center rounded-lg shadow-sm grayscale group-hover:grayscale-0 transition-all duration-500 z-20" style="background-image: url('images/features_image1.jpg');"></div>
+                    <div id="content-wrapper" class="flex flex-col opacity-0 group-hover:opacity-100 invisible group-hover:visible h-0 group-hover:h-full delay-200 z-10">
+                        <div id="content" class="flex flex-col items-center -mt-28 group-hover:mt-2 transition-all duration-300 delay-600">
+                            <h2 class="font-bold text-[1.4rem] tracking-wide text-white">Exclusive Offers</h2>
+                            <p class="text-center font-light text-white">Access special deals from your favorite local businesses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- features section ends here  -->
+
+
+    <!-- contact section starts from here  -->
+     
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- contact section ends here  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer section starts from here  -->
+     <footer>
+        <div class="p-10 bg-[#222] text-white">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
+                    <div class="mb-5">
+                        <!-- <h4 class="text-2xl pb-4">Company</h4> -->
+                        <span class="text-[1.7rem] text-white">Near</span
+                            ><span class="text-[1.9rem] text-[#d5991d]">Dekho</span>
+                        <p class="text-gray-400">
+                        A123 Lost Street
+                        Jaipur, 254805
+                        India <br><br>
+                        <strong>Phone:</strong> +91 8958785488<br>
+                        <strong>Email:</strong> neardekho@gmail.com <br>
+                        </p>
+                    </div>
+                    <div class="mb-5">
+                       <h4 class="pb-4">Useful Links</h4>
+                       <ul class="">
+                        <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#home" class="hover:text-[#d5991d]">Home</a></li>
+                        <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#features" class="hover:text-[#d5991d]">Features</a> </li>
+                        <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#location" class="hover:text-[#d5991d]">Our Location</a> </li>
+                        <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#about" class="hover:text-[#d5991d]">About Us</a> </li>
+                        <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#contact" class="hover:text-[#d5991d]">Contact Us</a> </li>
+                       </ul>
+                    </div>
+                    <div class="mb-5">
+                        <ul class="">
+                            <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#" class="hover:text-[#d5991d]">Terms & Conditions</a> </li>
+                            <li class="pb-4 text-gray-400"><i class="fa fa-chevron-right text-[#d5991d]"></i> <a href="#" class="hover:text-[#d5991d]">Privacy Policy</a> </li>
+                        </ul>
+                    </div>
+                    <div class="mb-5">
+                        <h4 class="pb-4">Join Our Newsletter</h4>
+                        <p class="text-gray-400 pb-2">Join 25,000+ others and never miss out on new </p>
+                        <form action="" class="flex flex-row flex-wrap">
+                            <input type="email" class="text-gray-400 w-2/3 p-2 focus:border-[#d5991d]" placeholder="Enter your email">
+                            <button class="p-2 w-1/3 bg-[#d5991d] text-white hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d]">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full bg-black text-gray-400 px-10">
+            <div class="max-w-7xl flex flex-col sm:flex-row py-4 mx-auto justify-between items-center">
+                <div class="text-center">
+                    <div> Copyright &copy; <strong><span>NearDekho</span></strong> | All Rights Reserved.</div>
+                    <div>Designed by <a class="text-[#d5991d]" href="">Aman Srivastava</a></div>
+                </div>
+                <div class="text-center text-xl text-white mb-2">
+                    <a href="" class="w-10 h-10 rounded-full bg-[#d5991d] hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] mx-1 inline-block pt-1"><i class="fa fa-instagram"></i></a>
+                    <a href="" class="w-10 h-10 rounded-full bg-[#d5991d] hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] mx-1 inline-block pt-1"><i class="fa fa-facebook"></i></a>
+                    <a href="" class="w-10 h-10 rounded-full bg-[#d5991d] hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] mx-1 inline-block pt-1"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer section ends here  -->
+
+
+
+
+    <!-- Font Awesome file linking  -->
+    <script
+      src="https://kit.fontawesome.com/9838733d2a.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Ionicons script file linking  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- External Js file linking  -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
