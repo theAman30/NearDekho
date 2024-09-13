@@ -4,12 +4,14 @@
   "description": "home \r features \r our location \r about us \r contact  us \r footer",
   "main": "index.js",
   "scripts": {
-    "watch": "tailwindcss -i ./css/input.css -o ./css/output.css --watch"
+    "build:css": "postcss ./css/input.css -o ./css/output.css --env production"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.45",
     "tailwindcss": "^3.4.11"
   },
   "dependencies": {
@@ -70,7 +72,7 @@
     "picomatch": "^2.3.1",
     "pify": "^2.3.0",
     "pirates": "^4.0.6",
-    "postcss": "^8.4.45",
+    "postcss-cli": "^11.0.0",
     "postcss-import": "^15.1.0",
     "postcss-js": "^4.0.1",
     "postcss-load-config": "^4.0.2",
