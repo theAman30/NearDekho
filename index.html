@@ -31,7 +31,6 @@
 
 <body class="overflow-x-hidden font-[Kanit]">
 
-
   <!-- Navbar starts from here  -->
   <nav
     class="p-2 shadow md:flex md:items-center md:justify-between w-[94%] fixed bg-white z-30 rounded left-1/2 transform -translate-x-1/2 m-0 mt-4">
@@ -66,10 +65,10 @@
           Us</a>
       </li>
 
-      <button
+      <!-- <button
         class="bg-[#d5991d] text-white duration-500 px-6 py-2 mx-4 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] rounded">
         Get started
-      </button>
+      </button> -->
     </ul>
   </nav>
   <!-- Navbar ends here  -->
@@ -90,7 +89,7 @@
         reach
       </p>
       <a href="#features"
-        class="px-5 py-2 inline-block bg-[#d5991d] rounded transition-colors mt-10 z-5 text-white duration-500 mx-4 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d]">Explore
+        class="px-5 py-2 inline-block bg-[#d5991d] rounded transition mt-10 z-5 text-white duration-500 mx-4 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d]">Explore
         Now</a>
     </div>
   </section>
@@ -154,6 +153,82 @@
   </section>
   <!-- features section ends here  -->
 
+
+  <!-- about us section starts from here  -->
+  <section id="about" class="py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      
+      <!-- Who We Are Section -->
+      <h2 class="text-3xl font-bold text-[#444] mb-4">About Us</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Near Dekho is a hyperlocal platform created to bring communities closer by connecting residents with local businesses, events, and opportunities.
+      </p>
+      
+      <!-- Mission & Vision Section -->
+      <div class="grid md:grid-cols-2 gap-8 mb-12">
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-[#444] mb-2">Mission</h3>
+          <p class="text-gray-600">
+            "We aim to revitalize local economies, strengthen community ties, and preserve neighborhood culture."
+          </p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold text-[#444] mb-2">Vision</h3>
+          <p class="text-gray-600">
+            "We believe in creating lasting connections by linking residents with businesses and events in their neighborhood."
+          </p>
+        </div>
+      </div>
+  
+      <!-- How It Works Section -->
+      <h2 class="text-3xl font-bold text-[#444] mb-4">How It Works</h2>
+      <ul class="text-lg text-gray-600 list-disc list-inside mb-8">
+        <li>Discover businesses and events within their chosen radius.</li>
+        <li>Engage with the community through local news and discussions.</li>
+        <li>Access special promotions and deals from nearby stores.</li>
+      </ul>
+  
+      <!-- Our Story Section -->
+      <h2 class="text-3xl font-bold text-[#444] mb-4">Our Story</h2>
+      <p class="text-lg text-gray-600 mb-8">
+        Near Dekho was born out of the need to rebuild local connections in an increasingly digital and fast-paced world. Our mission is to bring neighborhoods back together, allowing residents to rediscover the community around them and support local businesses.
+      </p>
+  
+      <!-- Meet the Team Section -->
+      <h2 class="text-3xl font-bold text-[#444] mb-4">Meet the Team</h2>
+      <div class="grid md:grid-cols-3 gap-8 mb-12">
+        <!-- Team Member 1 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="" alt="Team Member 1" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-[#444] mb-2">Nitin Lahoti</h3>
+          <p class="text-gray-600">Founder & CEO</p>
+        </div>
+  
+        <!-- Team Member 2 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="images/team-member2.jpg" alt="Team Member 2" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-[#444] mb-2">Udit</h3>
+          <p class="text-gray-600">Social Media Manager</p>
+        </div>
+  
+        <!-- Team Member 3 -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <img src="images/team-member3.jpg" alt="Team Member 3" class="w-24 h-24 mx-auto rounded-full mb-4">
+          <h3 class="text-xl font-semibold text-[#444] mb-2">Aman Srivastava</h3>
+          <p class="text-gray-600">Web Developer</p>
+        </div>
+      </div>
+  
+      <!-- Call to Action Section -->
+      <div class="bg-[#d5991d] text-black py-8 rounded-lg shadow-lg">
+        <h2 class="text-2xl font-bold mb-4">Ready to Explore Your Local Community?</h2>
+        <p class="text-lg mb-6">Download the Near Dekho app today and start connecting with the businesses and events around you.</p>
+        <a href="#download" class="bg-black text-white font-bold py-3 px-6 rounded hover:bg-[#444] hover:text-white transition">Download the App</a>
+      </div>
+    </div>
+  </section>
+  <!-- about us section ends here  -->
+
   <!-- newsletter section starts from here  -->
   <section class="bg-gray-100 py-10">
     <div class="max-w-2xl mx-auto text-center">
@@ -162,19 +237,19 @@
         Sign up for our newsletter and be the first to discover local events, business promotions, exclusive offers, and
         community news in your neighborhood.
       </p>
-
-      <form class="mt-6 p-4">
+  
+      <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 m-6">
+        <input type="hidden" name="access_key" value="a709c683-5190-40f7-b060-3b070e424aaa">
         <div class="flex flex-col md:flex-row gap-4 lg:gap-0 justify-center">
-          <input type="email" name="E-mail" placeholder="Enter your email" class="w-full md:w-1/2 p-3 border border-gray-200">
-          <button
-            class="w-full md:w-auto bg-[#d5991d] text-white px-6 py-3 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d]">Subscribe
-            Now</button>
+          <input type="email" name="E-mail" placeholder="Enter your email" class="w-full md:w-1/2 p-3 border border-gray-200" required>
+          <button class="w-full md:w-auto bg-[#d5991d] text-white px-6 py-3 hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] transition">Subscribe Now</button>
         </div>
-        <p class="mt-3 text-sm text-gray-500">We respect your privacy. Unsubscribe at any time.</p>
       </form>
-        <span>Thanks you for subscribing!!</span>
-      </div>
+  
+      <p class="mt-3 text-sm text-gray-500">We respect your privacy. Unsubscribe at any time.</p>
+    </div>
   </section>
+  
   <!-- ends here  -->
 
 
@@ -215,17 +290,18 @@
       </div>
 
       <div class="contact-form-container w-full md:w-1/2 ">
-        <form method="post" class="space-y-2">
+        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-2">
           <h3 class="text-4xl text-[#d5991d] mb-2 text-center pl-5">Get in touch with us</h3>
           <div class="inputBox flex flex-col md:flex-row gap-3 p-4">
+            <input type="hidden" name="access_key" value="a709c683-5190-40f7-b060-3b070e424aaa">
             <input type="text" name="name" placeholder="Enter your name here"
-              class="w-auto md:w-1/2 border-2 border-[#d5911d] p-2 text-lg outline-none">
+              class="w-auto md:w-1/2 border-2 border-[#d5911d] p-2 text-lg outline-none" required>
             <input type="email" name="email" placeholder="Enter your Email here"
-              class="w-full md:w-1/2 border-2 border-[#d5911d] p-2 text-lg outline-none">
+              class="w-full md:w-1/2 border-2 border-[#d5911d] p-2 text-lg outline-none" required>
           </div>
           <div class="m-4">
             <textarea name="message" rows="6" placeholder="What do you want to say?"
-              class="w-full border-2 border-[#d5911d] p-2 text-lg resize-none outline-none"></textarea>
+              class="w-full border-2 border-[#d5911d] p-2 text-lg resize-none outline-none" required></textarea>
           </div>
           <div id="button" class="m-4">
             <input type="submit" value="Message"
@@ -281,12 +357,13 @@
           <div class="mb-5">
             <h4 class="pb-4">Join Our Newsletter</h4>
             <p class="text-gray-400 pb-2">Stays connected with your local community!</p>
-            <form action="" class="flex flex-row flex-wrap">
-              <input type="email" name="E-mail" class="text-gray-400 w-2/3 p-2 focus:border-[#d5991d]" placeholder="Enter your email">
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-row flex-wrap">
+              <input type="hidden" name="access_key" value="a709c683-5190-40f7-b060-3b070e424aaa">
+              <input type="email" name="E-mail" class="text-gray-400 w-2/3 p-2 focus:border-[#d5991d]" placeholder="Enter your email" required>
               <button
-                class="p-2 w-1/3 bg-[#d5991d] text-white hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d]">Subscribe</button>
+                class="p-2 w-1/3 bg-[#d5991d] text-white hover:text-[#d5991d] hover:bg-white hover:border-[2px] hover:border-[#d5991d] transition">Subscribe</button>
             </form>
-            <span id="msg">Thanks you for subscribing!!</span>
+            <!-- <span id="msg">Thanks you for subscribing!!</span> -->
           </div>
         </div>
       </div>
