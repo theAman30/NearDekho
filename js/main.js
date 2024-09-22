@@ -1,14 +1,14 @@
 // function to toggle the menu-bar in small screens
 function Menu(e) {
-    let list = document.querySelector("ul");
-    e.name === "menu"
-      ? ((e.name = "close"),
-        list.classList.add("top-[80px]"),
-        list.classList.add("opacity-100"))
-      : ((e.name = "menu"),
-        list.classList.remove("top-[80px]"),
-        list.classList.remove("opacity-100"));
-  }
+  let list = document.querySelector("ul");
+  e.name === "menu"
+    ? ((e.name = "close"),
+      list.classList.add("top-[80px]"),
+      list.classList.add("opacity-100"))
+    : ((e.name = "menu"),
+      list.classList.remove("top-[80px]"),
+      list.classList.remove("opacity-100"));
+}
 
 // javascript function to make scroll to top functionality and animation hover remove-add functionality
 const scrollTopBtn = document.getElementById("scrollTopBtn");
@@ -26,7 +26,10 @@ scrollTopBtn.addEventListener("mouseout", () => {
 
 // Show the button when the user scrolls down 400px from the top of the page
 window.onscroll = function () {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
     scrollTopBtn.classList.remove("hidden");
   } else {
     scrollTopBtn.classList.add("hidden");
@@ -34,5 +37,5 @@ window.onscroll = function () {
 };
 
 scrollTopBtn.onclick = function () {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  window.scrollTo({ top: 0, behavior: "smooth" });
 };
