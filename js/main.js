@@ -1,3 +1,4 @@
+// function to toggle the menu-bar in small screens
 function Menu(e) {
     let list = document.querySelector("ul");
     e.name === "menu"
@@ -9,7 +10,7 @@ function Menu(e) {
         list.classList.remove("opacity-100"));
   }
 
-// javascript function to make scroll to top functionality and animation hover remove and add functionality
+// javascript function to make scroll to top functionality and animation hover remove-add functionality
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const icon = scrollTopBtn.querySelector("i");
 
