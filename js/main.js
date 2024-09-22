@@ -10,7 +10,7 @@ function Menu(e) {
       list.classList.remove("opacity-100"));
 }
 
-// javascript function to make scroll to top functionality and animation hover remove-add functionality
+// javascript function to make scroll to top functionality and hover remove-add functionality
 const scrollTopBtn = document.getElementById("scrollTopBtn");
 const icon = scrollTopBtn.querySelector("i");
 
