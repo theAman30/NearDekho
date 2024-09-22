@@ -26,12 +26,10 @@ scrollTopBtn.addEventListener("mouseout", () => {
 
 // Show the button when the user scrolls down 400px from the top of the page
 window.onscroll = function () {
-  if (
-    document.body.scrollTop > 400 ||
-    document.documentElement.scrollTop > 400
-  ) {
+  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     scrollTopBtn.classList.remove("hidden");
-  } else {
+  } 
+  else {
     scrollTopBtn.classList.add("hidden");
   }
 };
