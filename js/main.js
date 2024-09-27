@@ -37,3 +37,13 @@ window.onscroll = function () {
 scrollTopBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
+
+
+//  use to clear the form when form is submitted
+document.addEventListener("DOMContentLoaded", function() {
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+
+    // Reset the form after submission
+    this.reset();
+  });
+});
