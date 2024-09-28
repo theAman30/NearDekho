@@ -26,10 +26,12 @@ scrollTopBtn.addEventListener("mouseout", () => {
 
 // Show the button when the user scrolls down 400px from the top of the page
 window.onscroll = function () {
-  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  if (
+    document.body.scrollTop > 400 ||
+    document.documentElement.scrollTop > 400
+  ) {
     scrollTopBtn.classList.remove("hidden");
-  } 
-  else {
+  } else {
     scrollTopBtn.classList.add("hidden");
   }
 };
@@ -38,47 +40,46 @@ scrollTopBtn.onclick = function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 };
 
-
 //  use to clear the form when form is submitted
-document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("contact-form").addEventListener("submit", function(event) {
-
-    // Reset the form after submission
-    this.reset();
-  });
+document.addEventListener("DOMContentLoaded", function () {
+  document
+    .getElementById("contact-form")
+    .addEventListener("submit", function (event) {
+      // Reset the form after submission
+      this.reset();
+    });
 });
 
+// function to add blogs dynamically and when user clicks on button it will loads more cards
+document.addEventListener("DOMContentLoaded", () => {
+  const blogContainer = document.getElementById("blog-container");
+  const showMoreBtn = document.getElementById("showMoreBtn");
 
-// function to add blogs dynamically and when user clicks on button it will loads more cards 
-  document.addEventListener('DOMContentLoaded', () => {
-    const blogContainer = document.getElementById('blog-container');
-    const showMoreBtn = document.getElementById('showMoreBtn');
-    
-    // Array of blog posts to be loaded on "Show More"
-    const moreBlogs = [
-      {
-        title: 'Blog Post Title 3',
-        excerpt: 'This is a brief introduction to blog post 3...',
-        image: 'path-to-image-3.jpg',
-        link: '#'
-      },
-      {
-        title: 'Blog Post Title 4',
-        excerpt: 'This is a brief introduction to blog post 4...',
-        image: 'path-to-image-4.jpg',
-        link: '#'
-      },
-      {
-        title: 'Blog Post Title 5',
-        excerpt: 'This is a brief introduction to blog post 5...',
-        image: 'path-to-image-5.jpg',
-        link: '#'
-      }
-    ];
+  // Array of blog posts to be loaded on "Show More"
+  const moreBlogs = [
+    {
+      title: "Blog Post Title 3",
+      excerpt: "This is a brief introduction to blog post 3...",
+      image: "path-to-image-3.jpg",
+      link: "#",
+    },
+    {
+      title: "Blog Post Title 4",
+      excerpt: "This is a brief introduction to blog post 4...",
+      image: "path-to-image-4.jpg",
+      link: "#",
+    },
+    {
+      title: "Blog Post Title 5",
+      excerpt: "This is a brief introduction to blog post 5...",
+      image: "path-to-image-5.jpg",
+      link: "#",
+    },
+  ];
 
-    // Function to generate blog card HTML
-    function createBlogCard(blog) {
-      return `
+  // Function to generate blog card HTML
+  function createBlogCard(blog) {
+    return `
         <div class="blog-card bg-white rounded shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
           <img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover">
           <div class="p-6">
@@ -88,15 +89,15 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
         </div>
       `;
-    }
+  }
 
-    // Event listener for Show More button
-    showMoreBtn.addEventListener('click', () => {
-      moreBlogs.forEach(blog => {
-        blogContainer.innerHTML += createBlogCard(blog);
-      });
-
-      // Optionally hide the button after showing more blogs
-      showMoreBtn.style.display = 'none';
+  // Event listener for Show More button
+  showMoreBtn.addEventListener("click", () => {
+    moreBlogs.forEach((blog) => {
+      blogContainer.innerHTML += createBlogCard(blog);
     });
+
+    // Optionally hide the button after showing more blogs
+    showMoreBtn.style.display = "none";
   });
+});
