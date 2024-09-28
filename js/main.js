@@ -47,3 +47,56 @@ document.addEventListener("DOMContentLoaded", function() {
     this.reset();
   });
 });
+
+
+// function to add blogs dynamically and when user clicks on button it will loads more cards 
+  document.addEventListener('DOMContentLoaded', () => {
+    const blogContainer = document.getElementById('blog-container');
+    const showMoreBtn = document.getElementById('showMoreBtn');
+    
+    // Array of blog posts to be loaded on "Show More"
+    const moreBlogs = [
+      {
+        title: 'Blog Post Title 3',
+        excerpt: 'This is a brief introduction to blog post 3...',
+        image: 'path-to-image-3.jpg',
+        link: '#'
+      },
+      {
+        title: 'Blog Post Title 4',
+        excerpt: 'This is a brief introduction to blog post 4...',
+        image: 'path-to-image-4.jpg',
+        link: '#'
+      },
+      {
+        title: 'Blog Post Title 5',
+        excerpt: 'This is a brief introduction to blog post 5...',
+        image: 'path-to-image-5.jpg',
+        link: '#'
+      }
+    ];
+
+    // Function to generate blog card HTML
+    function createBlogCard(blog) {
+      return `
+        <div class="blog-card bg-white rounded shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+          <img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold text-gray-800 mb-3">${blog.title}</h3>
+            <p class="text-gray-600 mb-4">${blog.excerpt}</p>
+            <a href="${blog.link}" class="inline-block text-[#d5991d] font-medium hover:underline">Read more</a>
+          </div>
+        </div>
+      `;
+    }
+
+    // Event listener for Show More button
+    showMoreBtn.addEventListener('click', () => {
+      moreBlogs.forEach(blog => {
+        blogContainer.innerHTML += createBlogCard(blog);
+      });
+
+      // Optionally hide the button after showing more blogs
+      showMoreBtn.style.display = 'none';
+    });
+  });
