@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function createBlogCard(blog) {
     return `
         <div class="blog-card bg-white rounded shadow-md overflow-hidden" data-aos="fade-up" data-aos-delay="200">
-          <img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover">
+          <img src="${blog.image}" alt="${blog.title}" class="w-full h-48 object-cover transition-transform duration-300 hover:scale-105 hover:brightness-110">
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-3">${blog.title}</h3>
             <p class="text-gray-600 mb-4">${blog.excerpt}</p>
