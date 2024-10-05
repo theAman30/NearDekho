@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="p-6">
             <h3 class="text-xl font-semibold text-gray-800 mb-3">${blog.title}</h3>
             <p class="text-gray-600 mb-4">${blog.excerpt}</p>
-            <a href="${blog.link}" target="_blank" class="inline-block text-[#d5991d] font-medium hover:underline">Read more</a>
+            <a href="${blog.link}" class="inline-block text-[#d5991d] font-medium hover:underline">Read more</a>
           </div>
         </div>
       `;
