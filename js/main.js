@@ -58,16 +58,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // Array of blog posts to be loaded on "Show More"
   const moreBlogs = [
     {
-      title: "5 Reasons Why Users Love Near Dekho",
-      excerpt: "Hey there, neighbour! Ever feel like you're missing ...",
-      image: "path-to-image-3.jpg",
+      title: "5 Reasons Why Users Love NearDekho",
+      excerpt: "Hey there, neighbor! Ever feel like you're missing ...",
+      image: "./images/blogsImages/blog4/secondImage.jpeg",
       link: "./blogs/blog4.html",
     },
     {
-      title: "Blog Post Title 5",
-      excerpt: "This is a brief introduction to blog post 4...",
+      title: "Who Wins with NearDekho? Everyone!",
+      excerpt: "Hey there! Let's talk about how Near Dekho is making life ...",
       image: "path-to-image-4.jpg",
-      link: "#",
+      link: "./blogs/blog5.html",
     },
     {
       title: "Blog Post Title 6",
