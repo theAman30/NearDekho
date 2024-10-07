@@ -58,10 +58,10 @@ document.addEventListener("DOMContentLoaded", () => {
   // Array of blog posts to be loaded on "Show More"
   const moreBlogs = [
     {
-      title: "Blog Post Title 4",
-      excerpt: "This is a brief introduction to blog post 3...",
+      title: "5 Reasons Why Users Love Near Dekho",
+      excerpt: "Hey there, neighbour! Ever feel like you're missing ...",
       image: "path-to-image-3.jpg",
-      link: "#",
+      link: "./blogs/blog4.html",
     },
     {
       title: "Blog Post Title 5",
