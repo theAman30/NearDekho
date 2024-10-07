@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       title: "Who Wins with NearDekho? Everyone!",
-      excerpt: "Hey there! Let's talk about how Near Dekho is making life ...",
+      excerpt: "Hey there! Let's talk about how NearDekho is making life ...",
       image: "path-to-image-4.jpg",
       link: "./blogs/blog5.html",
     },
