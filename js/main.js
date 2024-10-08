@@ -66,14 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Who Wins with NearDekho? Everyone!",
       excerpt: "Hey there! Let's talk about how NearDekho is making life ...",
-      image: "path-to-image-4.jpg",
+      image: "./images/blogsImages/blog5/fifthImage.jpeg",
       link: "./blogs/blog5.html",
     },
     {
-      title: "Blog Post Title 6",
-      excerpt: "This is a brief introduction to blog post 5...",
+      title: "Users Who Can't Get Enough of NearDekho",
+      excerpt: "Hey, young folks! Want to know where the coolest hangouts...",
       image: "path-to-image-5.jpg",
-      link: "#",
+      link: "./blogs/blog6.html",
     },
   ];
 
