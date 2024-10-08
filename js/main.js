@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       title: "Users Who Can't Get Enough of NearDekho",
       excerpt: "Hey, young folks! Want to know where the coolest hangouts...",
-      image: "path-to-image-5.jpg",
+      image: "./images/blogsImages/blog6/fifthImage.jpeg",
       link: "./blogs/blog6.html",
     },
   ];
